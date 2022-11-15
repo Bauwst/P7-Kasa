@@ -1,19 +1,19 @@
 import React from 'react-dom';
 import '../styles/index.css';
 import Banner from '../components/Banner';
-import Header from '../components/Header';
+import Gallery from '../components/Gallery';
 
-import backgroundBanner from '../Images/Background.png';
+import backgroundBanner from '../Images/BackgroundBanner.png';
 
-const  Acceuil = () => {
+const  Home = () => {
     return (
         <div>
             <Banner
             title="Chez vous, partout et ailleurs"
             image={backgroundBanner} />
-            <Header />
+            {/* <Gallery /> */}
         </div>
     )
 }
 
-export default Acceuil
+export default Home
