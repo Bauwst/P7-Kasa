@@ -1,0 +1,22 @@
+.Erreur {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.Erreur h1 {
+    color:#FF6060;
+    font-size:288px;
+    font-weight: bolder;
+    margin: 15px 5px 5px 5px;
+}
+
+.Erreur p {
+    margin: 40px 0;
+    font-size: 36px;
+    color:#FF6060;
+}
+
+.Erreur a {
+    color: #FF6060;  
+}
+

@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-
-// import reportWebVitals from './reportWebVitals';
-
+import { Navigate } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-
+// import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -15,11 +13,8 @@ import PageLogements from './pages/PageLogements'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error404 from './components/Error404'
-import { Navigate } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
 
 root.render(
   <React.StrictMode>
@@ -29,6 +24,8 @@ root.render(
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About />}/>
         <Route path="*" element = {<Navigate to ="/notfound" replace />}/>
+        <Route path="/notfound" element ={<Error404 />}/>
+        {/* <Route path="/logement/:id" element ={<PageLogements />}/> */}
       </Routes>
       <Footer /> 
     </Router>

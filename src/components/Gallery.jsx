@@ -7,7 +7,7 @@ const Gallery = () => {
     return(
         <ul className = 'liste-logements'>
             {logements.map(({id, cover, title}) =>
-            <Card id={id} cover={cover} title={title} />
+            <Card id={id} cover={cover} title={title} key={id.toString()} />
             )}
         </ul>
     )
