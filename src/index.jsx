@@ -22,7 +22,7 @@ root.render(
         <Route path="/about" element={<About />}/>
         <Route path="*" element = {<Navigate to ="/notfound" replace />}/>
         <Route path="/notfound" element ={<Error404 />}/>
-        {/* <Route path="/logement/:id" element ={<PageLogements />}/> */}
+        <Route path="/logement/:id" element ={<PageLogements />}/>
       </Routes>
       <Footer /> 
     </Router>
