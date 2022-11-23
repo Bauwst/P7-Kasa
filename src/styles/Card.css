@@ -11,16 +11,22 @@
 
 .gallery-card p {
     position:absolute;
-    top:75%;
+    top:80%;
     left: 5%;
     max-width: 70%;
     color:white;
     text-shadow: 1px 1px 3px black;
 }
 
+.gallery-card a{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
 .card-cover {
     width:100%;
-    height:100%;
-    border-radius: 10px 10px 0 0;
+    height:80%;
+    border-radius: inherit;
     object-fit: cover;
 }
