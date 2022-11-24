@@ -10,11 +10,10 @@ const Logement = ({ title, id, location, tags, host, hostPhoto, rating}) => {
                     <hi className="title-logement">{title}</hi>
                     <p className="location-logement">{location}</p>
                     <ul className ="tags-logement">
-                        {tags.map((tag) =>
+                        {/* {tags.map((tag) =>
                         <li key ={`${id}+ " " +${tag}`}></li>
-                        )}
+                        )} */}
                     </ul>
-                    
                     <Note evaluation={rating} />
                 </div>
             </div>

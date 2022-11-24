@@ -39,7 +39,7 @@ const PageLogements = () => {
             rating = {findLogement.rating}/>
             <div className="collapse-logements">
                 <Collapse title="Description" description={findLogement.description}/>
-                <Collapse title="Équipements" description={findLogement.equipements.map((equipement) =>
+                <Collapse title="Équipements" description={findLogement.equipments.map((equipement) =>
                     <li key={`${findLogement.id}+ " " + ${equipement}`}>{equipement}</li>)}/>
             </div>
         </div>

@@ -20,3 +20,15 @@
     color: #FF6060;  
 }
 
+@media  (max-width: 768px){
+    .Erreur h1{
+        font-size: 5rem;
+        font-weight: bolder;
+        margin: 5rem 0 1rem;
+    }
+
+    .Erreur p{
+        margin-bottom: 6rem;
+        font-size: 1.3rem;
+    }
+}

@@ -11,10 +11,13 @@ header {
     box-sizing: content-box;
 }
 
-@media (max-width: 780px) {
+@media  (max-width: 768px){
 
-    header{
-        justify-content: space-between;
+    header a{
+        width: 50%;
     }
     
+    .logo{
+        width: 90%;
+    }
 }
