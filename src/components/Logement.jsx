@@ -2,24 +2,26 @@ import Note from './Note'
 
 import '../styles/Logement.css'
 
-const Logement = ({ title, id, location, tags, host, hostPhoto, rating}) => {
+
+const Logement = ({ title, id, location, tags, host, rating}) => {
+    console.table(host)
     return (
         <div key={id}>
             <div className="header-logement">
                 <div className="details">
-                    <hi className="title-logement">{title}</hi>
+                    <h1 className="title-logement">{title}</h1>
                     <p className="location-logement">{location}</p>
                     <ul className ="tags-logement">
-                        {/* {tags.map((tags) =>
-                            <li key ={`${id}+ " " +${tags}`}></li>
-                        )}  */}
+                        {tags.map((tag) =>
+                            <li key ={`${id}+ " " +${tag}`}>{tag}</li>
+                        )}  
                     </ul>
                     </div>
                     <div className = "host-note">
                         <div className = "host">
                             <p>{host.name}
                             </p>
-                            <img className ="host-photo" src={hostPhoto} alt={host}/>
+                            <img className ="host-photo" src={host.picture} alt={host.name}/>
                         </div>
                     <Note evaluation={rating} />
                 </div>

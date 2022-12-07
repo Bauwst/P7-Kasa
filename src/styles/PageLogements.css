@@ -1,0 +1,18 @@
+.collapse-logements{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.collapse-logements > button{
+    padding: 10px;
+}
+
+.collapse-logements > div{
+    width: 47%;
+}
+
+.collapse-logements > div > p{
+    height: 200px;
+}

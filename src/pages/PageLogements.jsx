@@ -6,6 +6,8 @@ import { useParams, Navigate } from 'react-router-dom'
 
 import Collapse from '../components/Collapse'
 import Logement from '../components/Logement'
+import ImageSlider from '../components/ImageSlider'
+import "../styles/PageLogements.css"
 
 
 const PageLogements = () => {
@@ -29,13 +31,13 @@ const PageLogements = () => {
     
     return (
         <div className = "container-logements">
+            <ImageSlider slide = {findLogement.pictures} />
             <Logement
             title={findLogement.title}
             id={id}
             location={findLogement.location}
             tags={findLogement.tags}
-            host={findLogement.host.name}
-            hostPhoto = {findLogement.host.picture}
+            host={findLogement.host}
             rating = {findLogement.rating}/>
             <div className="collapse-logements">
                 <Collapse title="Description" description={findLogement.description}/>
