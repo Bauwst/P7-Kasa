@@ -29,7 +29,7 @@
 .host-note{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: auto;
     text-align: right;
 }
 
@@ -59,4 +59,17 @@
     border: 0;
     border-radius: 10px;
     padding: 5px 20px;
+}
+
+@media (max-width: 768px) {
+    .header-logement {
+        flex-wrap:wrap;
+    }
+
+    .host-note {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }
