@@ -1,6 +1,5 @@
 .gallery-card {
     width:340px;
-    height:340px;
     display:flex;
     flex-direction: column;
     position: relative;
@@ -20,8 +19,16 @@
 
 .gallery-card a{
     width: 100%;
-    height: 100%;
     border-radius: inherit;
+    display: inline-block;
+    position:relative;
+}
+
+.gallery-card a:before {
+    content: "";
+    display:block;
+    width:100%;
+    padding-top: 100%;
 }
 
 .card-cover {
@@ -29,4 +36,17 @@
     height:80%;
     border-radius: inherit;
     object-fit: cover;
+    position:absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left:0;
+}
+
+
+@media only screen and (max-width: 768px){
+    .gallery-card{
+    width: 100%;
+    margin: 20px 0;
+    }
 }

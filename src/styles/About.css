@@ -2,3 +2,10 @@
     width: 85%;
     margin: 0 auto 50px;
 }
+
+@media  (max-width: 768px) {
+    .card-about{
+        width: 100%;
+    }
+  
+}
