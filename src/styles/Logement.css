@@ -61,9 +61,17 @@
     padding: 5px 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .header-logement {
         flex-wrap:wrap;
+    }
+    .tags-logement{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .tags-logement li {
+        margin:5px;
     }
 
     .host-note {

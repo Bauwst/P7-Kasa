@@ -26,22 +26,20 @@ const ImageSlider = ({slides}) => {
     }
 
     return (
-        <div className = "sliderStyle">
-            <div className = "leftStyle" onClick={goPrevious}>{leftArrow}</div>
-            <div className = "rightStyle" onClick={goNext}>{rightArrow}</div>
+        <div className = "containerStyle">
             <div className = "slideCount">{currentPicture + 1}/{slides.length}</div>
-            <div className = "containerStyle">
-                {slides.map((slidePicture, index) => {
-                    return (
-                        <div key = {index} className = {index === currentPicture ? 'slideStyles active' : 'slideStyles' }>
+            {slides.map((slidePicture, index) => {
+                return (
+                    <div key = {index} className = {index === currentPicture ? 'slideStyles active' : 'slideStyles' }>
                         {index === currentPicture && (
                         <img src={slidePicture} alt='' className='picture' />
                          )}
                     </div>
                     )
                 }
-                )}
-            </div>
+            )}
+            <div className = "rightStyle" onClick={goNext}>{rightArrow}</div>
+            <div className = "leftStyle" onClick={goPrevious}>{leftArrow}</div>
         </div>
     )
  }

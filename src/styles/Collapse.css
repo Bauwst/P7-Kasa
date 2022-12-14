@@ -25,7 +25,7 @@
     margin: -15px 0 0 0;
     padding: 30px 10px 10px 10px;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .fleche{
@@ -37,4 +37,11 @@
 .fleche-down{
     transform: rotate(180deg);
     transition: .2s ease-in-out;
+}
+
+@media (max-width: 800px) {
+    .collapse-description {
+        font-size: 12px;
+        font-weight: bold;
+    }
 }
