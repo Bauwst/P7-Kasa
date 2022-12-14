@@ -42,6 +42,8 @@
 @media (max-width: 800px) {
     .collapse-description {
         font-size: 12px;
-        font-weight: bold;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142%;
     }
 }
