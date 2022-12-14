@@ -1,4 +1,57 @@
-.sliderStyle{
+.sliderStyle {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.rightStyle {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.leftStyle{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slideStyles {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slideStyles.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.slideCount {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    bottom: 17%;
+}
+/* .sliderStyle{
     height: 100%;
     width: 100%;
     position: relative;
@@ -29,4 +82,5 @@
 .containerStyles{
     display: flex;
     justify-content: center;
-}
+} */
+

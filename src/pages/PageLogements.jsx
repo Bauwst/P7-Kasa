@@ -31,7 +31,7 @@ const PageLogements = () => {
     
     return (
         <div className = "container-logements">
-            <ImageSlider slide = {findLogement.pictures} />
+            <ImageSlider slides = {findLogement.pictures} />
             <Logement
             title={findLogement.title}
             id={id}
