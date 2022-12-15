@@ -1,5 +1,7 @@
 .collapse{
     margin-bottom: 30px;
+    display:flex;
+    flex-direction: column;
 }
 
 .collapse-button{
@@ -24,8 +26,8 @@
     border-radius: 10px;
     margin: -15px 0 0 0;
     padding: 30px 10px 10px 10px;
-    line-height: 25px;
-    font-size: 15px;
+    font-size: 24px;
+    flex:1;
 }
 
 .fleche{
@@ -41,9 +43,9 @@
 
 @media (max-width: 800px) {
     .collapse-description {
-        font-size: 12px;
-        font-style: normal;
+        /* font-size: 12px; */
+        /* font-style: normal;
         font-weight: 400;
-        line-height: 142%;
+        line-height: 142%; */
     }
 }

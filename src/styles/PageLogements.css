@@ -14,9 +14,7 @@
     width: 45%;
 }
 
-.collapse-logements > div > p{
-    height: 200px;
-}
+
 
 @media (max-width: 768px){
     .collapse-logements{
